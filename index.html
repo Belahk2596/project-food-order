@@ -1,9 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<script src="pizza.js"></script>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="pizza.js" async></script>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <title>K's Pizza</title>
+  </head>
+  <body>
+    <div class="navbar">
+        <div><a href="#menu">Menu Items</a></div>
+        <div><a href="#order">Order Summary</a></div>
+        <div><a href="#contact">Contact Us</a></div>
+    </div>
+    <div class="header">
+      <h1 class="title"><u>K's Pizza</u></h1>
+      <img src="logo.png" class="logo" />
+    </div>
+    <article>I love pizza from my head tomatoes :)</article>
+    <section class="section-one">
+      <h2 id="menu">Menu</h2>
+      <div class="menu-card">
+        <img src="pepperonipizza.jpeg" />
+        <h3>Pepperoni Pizza</h3>
+        <select>
+            <option>Select Size</option>
+            <option>Small $8</option>
+            <option>Medium $10</option>
+            <option>Large $12</option>
+        </select>
+        <p>
+          Classic marinara tomato sauce, a spicy hit of pepperoni and meltingly
+          good mozzarella. A pizza for purists.
+        </p>
+        <div class="button-wrap">
+            <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="meatloverspizza.jpeg" />
+        <h3>Meatlovers Pizza</h3>
+        <select>
+            <option>Select Size</option>
+            <option>Small $8</option>
+            <option>Medium $10</option>
+            <option>Large $12</option>
+        </select>
+        <p>
+            The ULTIMATE meat pizza, stacked with sliced 100% chicken breast,
+            pepperoni, Italian sausage, succulent ham, seasoned ground beef and
+            bacon all piled onto classic marinara sauce and finished with cheesy
+            mozzarella and a drizzle of BBQ sauce.
+        </p>
+        <div class="button-wrap">
+            <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="menu-card">
+        <img src="cheesepizza.jpeg" />
+        <h3>Cheese Pizza</h3>
+        <select>
+            <option>Select Size</option>
+            <option>Small $8</option>
+            <option>Medium $10</option>
+            <option>Large $12</option>
+        </select>
+        <p>
+            Pizza Hut’s classic marinara tomato sauce is loaded to the max with
+            stretchy, gooey, melting mozzarella. For when cheese is all you need.
+        </p>
+        <div class="button-wrap">
+            <button>Add to cart</button>
+        </div>
+      </div>
+    </section>
+    <section class="section-two">
+        <h2 id="order">Order Summary</h2>
+<div class="order-head">
+    <div class="item">Item</div>
+    <div class="quantity">Quantity</div>
+    <div class="size">Size</div>
+    <div class="price">Price</div>
+</div>
+<div class="order-row">
+    <div class="item">Pepperoni Pizza</div>
+    <div class="quantity">2</div>
+    <div class="size">Large</div>
+    <div class="price">$24</div>
+</div>
+<div class="order-row">
+    <div class="item">Meatlovers Pizza</div>
+    <div class="quantity">2</div>
+    <div class="size">Large</div>
+    <div class="price">$24</div>
+</div>
+<div class="total-price">Total Price: $48</div>
+    </section>
+    <section class="section-three">
+        <h2 id="contact">Contact Us</h2>
+        <div class="contact-details">
+            <div class="ph-number">Ph: 0800 83 83 83</div>
+            <div class="email">Email: info@take2nz.org</div>
+        </div>
+    </section>
+  </body>
 </html>
