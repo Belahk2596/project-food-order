@@ -3,8 +3,9 @@
     --pizza-red: #f03861;
 }
 html {
-    background-color;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('');
+    background-size: 100%;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
 
 .navbar {
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-around;
     position: fixed;
     border-bottom: 1px solid rgba(0, 0, 0, 0.218);
@@ -84,11 +85,17 @@ select {
     border-radius: 20px;
 }
 
-h2 {
+.sub-head {
     font-size: 3rem;
     text-align: center;
     margin-top: 100px;
 
+}
+
+#contact {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .button-wrap {
@@ -112,7 +119,8 @@ article {
     justify-content: space-around;
     border-bottom:1px solid rgba(0, 0, 0, 0.218);
     padding: 25px 0px; 
-    color: grey
+    color: grey;
+    width: 100%;
     
 }
 .order-head {
@@ -124,6 +132,10 @@ article {
     padding-bottom: 20px;  
 }
 
+.order-head div, .order-row div {
+    flex: 1;
+    text-align: center;
+}
 .total-price {
     float: right;
     margin-right: 50px;
@@ -139,7 +151,6 @@ article {
 .section-three {
     height: 200px;
     background-color: var(--pizza-cream);
-    margin-top: 10px;
 }
 
 .contact-details {
@@ -148,4 +159,15 @@ article {
     justify-content: space-around;
     font-weight: 300;
     font-style: italic;
+    max-height: 100px;
+}
+
+.logo2 {
+    display: flex;
+    align-items: center;
+}
+
+.logo2 img {
+    max-height: 100px;
+    
 }
