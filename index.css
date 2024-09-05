@@ -1,6 +1,7 @@
 :root {
     --pizza-cream: rgba(245,217,126,255);
     --pizza-red: #f03861;
+    --border-bottom: rgba(0, 0, 0, 0.486);
 }
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -19,6 +20,7 @@ body {
     position: fixed;
     border-bottom: 1px solid rgba(0, 0, 0, 0.218);
     padding: 20px 0px;
+    background-color: white;
 }
 
 .navbar > div {
@@ -55,11 +57,11 @@ u {
     margin-bottom: 20px;
     padding: 10px;
     border-radius: 20px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.664);
+    box-shadow: 1px 1px 10px var(--border-bottom);
     
 }
 .menu-card > img {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.218);
+    border-bottom: 1px solid var(--border-bottom);
 }
 
 .section-one {
@@ -68,19 +70,6 @@ u {
     align-items: center;
 }
 
-button {
-    background-color: green;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.664);
-    font-weight: 800;
-    padding: 20px 0px;
-    margin-bottom: 10px;
-    width: 150px;
-    color: white;
-    
-
-}
 select {
     border-radius: 20px;
 }
@@ -98,6 +87,18 @@ select {
     padding-top: 30px;
 }
 
+button {
+    background-color: green;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px var(--border-bottom);
+    font-weight: 800;
+    padding: 20px 0px;
+    margin-bottom: 10px;
+    width: 150px;
+    color: white;
+
+}
+
 .button-wrap {
     display: flex;
     justify-content: center;
@@ -113,30 +114,8 @@ article {
     font-weight: 400;
     color: gray;
 }
-.order-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom:1px solid rgba(0, 0, 0, 0.218);
-    padding: 25px 0px; 
-    color: grey;
-    width: 100%;
-    
-}
-.order-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom:1px solid rgba(0, 0, 0, 0.218);
-    font-weight: 600;
-    padding-bottom: 20px;  
-}
 
-.order-head div, .order-row div {
-    flex: 1;
-    text-align: center;
-}
-.total-price {
+#total-price {
     float: right;
     margin-right: 50px;
     margin-top: 20px;
@@ -148,9 +127,28 @@ article {
     height: 500px;
 }
 
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 90%;
+}
+tr, td, th {
+    border-bottom: 1px solid var(--border-bottom);  
+    padding: 20px;
+}
+
+th {
+    text-align: start;
+}
+.table-wrap {
+    display: flex;
+    justify-content: center;
+}
+
 .section-three {
     height: 200px;
     background-color: var(--pizza-cream);
+    border-top: 1px solid black;
 }
 
 .contact-details {
@@ -170,4 +168,13 @@ article {
 .logo2 img {
     max-height: 100px;
     
+}
+input {
+    width: 40px;
+}
+
+@media (max-width: 768px) {
+    html {
+        width: 100%;
+    }
 }
