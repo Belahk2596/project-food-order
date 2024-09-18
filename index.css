@@ -70,10 +70,6 @@ u {
     align-items: center;
 }
 
-select {
-    border-radius: 20px;
-}
-
 .sub-head {
     font-size: 3rem;
     text-align: center;

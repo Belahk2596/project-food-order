@@ -1,6 +1,19 @@
+const order = {
+    pepperoni: {
+        regular: 12,
+        large: 16 
+    },
+    meatlovers: {
+        regular: 12,
+        large: 16
+    },
+    cheese: {
+        regular: 12,
+        large: 16
+    }
+}
+console.log(order);
 
-let pizzaOrder = {
-pizzaOne: "Pepperoni Pizza",
-pizzaTwo: "Meatlovers Pizza",
-pizzaThree: "Cheese Pizza"
-};
+function addToOrder(type, size) {
+
+}
