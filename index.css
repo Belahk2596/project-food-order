@@ -92,12 +92,13 @@ button {
     margin-bottom: 10px;
     width: 150px;
     color: white;
-
+    cursor: pointer;
 }
 
 .button-wrap {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 p {
@@ -112,33 +113,17 @@ article {
 }
 
 #total-price {
-    float: right;
+    text-align: center;
     margin-right: 50px;
-    margin-top: 20px;
+    margin-top: 40px;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 4rem;
+    padding-top: 20px;
+    font-style: italic;
 }
 
 .section-two {
     height: 500px;
-}
-
-table {
-    table-layout: fixed;
-    border-collapse: collapse;
-    width: 90%;
-}
-tr, td, th {
-    border-bottom: 1px solid var(--border-bottom);  
-    padding: 20px;
-}
-
-th {
-    text-align: start;
-}
-.table-wrap {
-    display: flex;
-    justify-content: center;
 }
 
 .section-three {
@@ -154,6 +139,7 @@ th {
     font-weight: 300;
     font-style: italic;
     max-height: 100px;
+    color: #f03861
 }
 
 .logo2 {
